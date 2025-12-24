@@ -1,0 +1,41 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="300" fill="#020817"/>
+  
+  <!-- Digital Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#38bdf8;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#grid)" />
+  
+  <!-- Center Energy Pulse -->
+  <circle cx="600" cy="150" r="80" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5,10">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 150" to="360 600 150" dur="20s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="600" cy="150" r="100" fill="none" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="2,4">
+    <animateTransform attributeName="transform" type="rotate" from="360 600 150" to="0 600 150" dur="30s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Aegis Logo (Geometric) -->
+  <path d="M 600 90 L 660 120 L 660 180 L 600 210 L 540 180 L 540 120 Z" fill="none" stroke="#38bdf8" stroke-width="4">
+    <animate attributeName="stroke-width" values="2;5;2" dur="3s" repeatCount="indefinite" />
+  </path>
+  <circle cx="600" cy="150" r="10" fill="#38bdf8">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Text -->
+  <text x="600" y="260" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#f8fafc" text-anchor="middle" letter-spacing="8">AEGIS CORE</text>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle" letter-spacing="4">SENTIENT SPACECRAFT OPERATING SYSTEM</text>
+
+  <!-- Side Data Lines -->
+  <line x1="100" y1="150" x2="500" y2="150" stroke="#38bdf8" stroke-width="0.5" opacity="0.3" />
+  <line x1="700" y1="150" x2="1100" y2="150" stroke="#38bdf8" stroke-width="0.5" opacity="0.3" />
+</svg>

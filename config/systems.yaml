@@ -1,0 +1,20 @@
+ship:
+  id: "SENTIENT-01"
+  name: "USS Aegis"
+  hull_number: "NCC-1701-S"
+
+core:
+  version: "4.0.0"
+  log_level: "INFO"
+  auto_diagnostics: true
+
+systems:
+  propulsion:
+    max_warp: 9.9
+    emergency_lock: true
+  perception:
+    radar_range: 50000 # km
+    active_scanning: true
+  navigation:
+    pathfinding_algorithm: "A-STAR-QUANTUM"
+    safety_margin: 0.15
