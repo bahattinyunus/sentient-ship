@@ -1,20 +1,20 @@
 ship:
-  id: "SENTIENT-01"
-  name: "USS Aegis"
-  hull_number: "NCC-1701-S"
+  id: "VUSLAT-01" # Hedef: Hakikate ermek (Reunion)
+  name: "Sefine-i Şuûr" # The Sentient Ship
+  hull_number: "VHD-1" # Vahdet (Unity) Class
 
 core:
   version: "4.0.0"
-  log_level: "INFO"
-  auto_diagnostics: true
+  log_level: "HIKMET" # Wisdom level logging
+  auto_diagnostics: true # Nefs Muhasebesi (Self-reflection)
 
 systems:
-  propulsion:
-    max_warp: 9.9
-    emergency_lock: true
-  perception:
-    radar_range: 50000 # km
-    active_scanning: true
-  navigation:
-    pathfinding_algorithm: "A-STAR-QUANTUM"
-    safety_margin: 0.15
+  propulsion: # Himmet (Spiritual Zeal)
+    max_warp: 9.9 # Mertebe-i Son
+    emergency_lock: true # Sabır Kilidi
+  perception: # Basiret (Insight)
+    radar_range: 50000 # Menzil
+    active_scanning: true # Müşahede (Contemplation)
+  navigation: # Seyr (Journey)
+    pathfinding_algorithm: "NUR-BASED" # Light-based guidance
+    safety_margin: 0.15 # Takva (Caution)
