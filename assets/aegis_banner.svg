@@ -32,8 +32,8 @@
   </circle>
 
   <!-- Text -->
-  <text x="600" y="260" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#f8fafc" text-anchor="middle" letter-spacing="8">AEGIS CORE</text>
-  <text x="600" y="280" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle" letter-spacing="4">SENTIENT SPACECRAFT OPERATING SYSTEM</text>
+  <text x="600" y="260" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#f8fafc" text-anchor="middle" letter-spacing="8">AEGIS ÇEKİRDEĞİ</text>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle" letter-spacing="4">BİLİNÇLİ UZAY ARACI İŞLETİM SİSTEMİ</text>
 
   <!-- Side Data Lines -->
   <line x1="100" y1="150" x2="500" y2="150" stroke="#38bdf8" stroke-width="0.5" opacity="0.3" />

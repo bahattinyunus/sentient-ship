@@ -10,23 +10,23 @@ class BaseModule(ABC):
     def __init__(self, name):
         self.name = name
         self.logger = logging.getLogger(f"Aegis.{name}")
-        self.status = "INITIALIZING"
+        self.status = "BAŞLATILIYOR"
         self._running = False
 
     def setup(self, config=None):
-        self.logger.info(f"Setting up module: {self.name}")
-        # Module-specific setup logic
-        self.status = "READY"
+        self.logger.info(f"Modül kuruluyor: {self.name}")
+        # Modüle özgü kurulum mantığı
+        self.status = "HAZIR"
 
     @abstractmethod
     def update(self):
-        """Main operational loop for the module."""
+        """Modülün ana operasyonel döngüsü."""
         pass
 
     def shutdown(self):
-        self.logger.info(f"Shutting down module: {self.name}")
+        self.logger.info(f"Modül kapatılıyor: {self.name}")
         self._running = False
-        self.status = "OFFLINE"
+        self.status = "ÇEVRİMDIŞI"
 
     def get_health(self):
         return {

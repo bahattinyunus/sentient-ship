@@ -8,12 +8,12 @@ class NavigationModule(BaseModule):
 
     def update(self):
         if self.target_coordinates:
-            self.status = "NAVIGATING"
-            # Simulate movement
+            self.status = "NAVİGASYON_AKTİF"
+            # Hareketi simüle et
             for i in range(3):
                 if self.current_coordinates[i] < self.target_coordinates[i]:
                     self.current_coordinates[i] += 1
         else:
-            self.status = "STATION_KEEPING"
+            self.status = "KONUM_KORUMA"
         
         return self.current_coordinates

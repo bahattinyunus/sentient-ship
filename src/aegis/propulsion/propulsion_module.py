@@ -8,10 +8,10 @@ class PropulsionModule(BaseModule):
 
     def update(self):
         if self.warp_factor > 0:
-            self.status = "WARP_ENGAGED"
+            self.status = "WARP_AKTİF"
             self.power_output = 100 + (self.warp_factor * 10)
         else:
-            self.status = "THRUSTERS_READY"
+            self.status = "İTKİ_SİSTEMLERİ_HAZIR"
             self.power_output = 20
         
         return self.power_output

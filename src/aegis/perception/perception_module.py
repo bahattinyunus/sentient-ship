@@ -9,9 +9,9 @@ class PerceptionModule(BaseModule):
     def update(self):
         # Simulate sensor scanning
         if random.random() > 0.7:
-            entity = f"Unknown_Object_{random.randint(100, 999)}"
+            entity = f"Bilinmeyen_Nesne_{random.randint(100, 999)}"
             self.detected_entities.append(entity)
-            self.logger.info(f"New entity detected: {entity}")
+            self.logger.info(f"Yeni varlık tespit edildi: {entity}")
         
-        self.status = "SCANNING"
+        self.status = "TARIYOR"
         return self.detected_entities
